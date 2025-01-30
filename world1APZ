@@ -1,0 +1,155 @@
+--sakura
+
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local HRT = character:WaitForChild("HumanoidRootPart")
+
+local function autofarm()
+    while true do
+        local enemyFound = false
+        for _, enemy in ipairs(workspace.Enemies:GetChildren()) do
+            if enemy.Name == "sarura" then
+                local enemyRoot = enemy:FindFirstChild("HumanoidRootPart")
+                local hrtEnemy = enemy:FindFirstChild("Humanoid")
+                if enemyRoot and hrtEnemy then
+                    if hrtEnemy.Health > 0 then
+                        HRT.CFrame = enemyRoot.CFrame + Vector3.new(0, 1, 3)
+                        enemyFound = true
+                        break
+                    end
+                end
+            end
+        end
+        
+        if not enemyFound then
+            wait(1)
+        end
+        wait(0.1)
+    end
+end
+
+autofarm()
+
+--luu
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local HRT = character:WaitForChild("HumanoidRootPart")
+
+local function autofarm()
+    while true do
+        local enemyFound = false
+        for _, enemy in ipairs(workspace.Enemies:GetChildren()) do
+            if enemy.Name == "luu" then
+                local enemyRoot = enemy:FindFirstChild("HumanoidRootPart")
+                local hrtEnemy = enemy:FindFirstChild("Humanoid")
+                if enemyRoot and hrtEnemy then
+                    if hrtEnemy.Health > 0 then
+                        HRT.CFrame = enemyRoot.CFrame + Vector3.new(0, 1, 3)
+                        enemyFound = true
+                        break -- Sai do loop após teleportar para o primeiro inimigo encontrado
+                    end
+                end
+            end
+        end
+        if not enemyFound then
+            wait(1) -- Espera um segundo se nenhum inimigo for encontrado
+        end
+        wait(0.1) -- Espera um pouco antes de verificar novamente
+    end
+end
+
+autofarm()
+
+
+--kakashi
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local HRT = character:WaitForChild("HumanoidRootPart")
+
+local function autofarm()
+    while true do
+        local enemyFound = false
+        for _, enemy in ipairs(workspace.Enemies:GetChildren()) do
+            if enemy.Name == "kakushu" then
+                local enemyRoot = enemy:FindFirstChild("HumanoidRootPart")
+                local hrtEnemy = enemy:FindFirstChild("Humanoid")
+                if enemyRoot and hrtEnemy then
+                    if hrtEnemy.Health > 0 then
+                        HRT.CFrame = enemyRoot.CFrame + Vector3.new(0, 1, 3) -- Teleporta o jogador
+                        enemyFound = true
+                        break -- Sai do loop após teleportar para o primeiro inimigo encontrado
+                    end
+                end
+            end
+        end
+        if not enemyFound then
+            wait(5)
+        end
+        wait(0.1) -- Espera um pouco antes de verificar novamente
+    end
+end
+
+autofarm()
+
+--naruto
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local HRT = character:WaitForChild("HumanoidRootPart")
+
+local function autofarm()
+    while true do
+        local enemyFound = false
+        for _, enemy in ipairs(workspace.Enemies:GetChildren()) do
+            if enemy.Name == "naturo" then
+                local enemyRoot = enemy:FindFirstChild("HumanoidRootPart")
+                local hrtEnemy = enemy:FindFirstChild("Humanoid")
+                if enemyRoot and hrtEnemy then
+                    if hrtEnemy.Health > 0 then
+                        HRT.CFrame = enemyRoot.CFrame + Vector3.new(0, 1, 3) -- Teleporta o jogador
+                        enemyFound = true
+                        wait(2) -- Espera 2 segundos após teleportar antes de verificar novamente
+                        break -- Sai do loop após teleportar para o primeiro inimigo encontrado
+                    end
+                end
+            end
+        end    
+        if not enemyFound then
+            wait(5) -- Espera 5 segundos se nenhum inimigo for encontrado
+        end      
+        wait(0.1) -- Espera um pouco antes de verificar novamente
+    end
+end
+
+autofarm()
+
+--madara
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local HRT = character:WaitForChild("HumanoidRootPart")
+
+local function autofarm()
+    while true do
+        local enemyFound = false
+        for _, enemy in ipairs(workspace.Enemies:GetChildren()) do
+            if enemy.Name == "madara" then
+                local enemyRoot = enemy:FindFirstChild("HumanoidRootPart")
+                local hrtEnemy = enemy:FindFirstChild("Humanoid")
+                if enemyRoot and hrtEnemy then
+                    if hrtEnemy.Health > 0 then
+                        HRT.CFrame = enemyRoot.CFrame + Vector3.new(0, 1, 3) -- Teleporta o jogador
+                        enemyFound = true
+                        wait(2) -- Espera 2 segundos após teleportar antes de verificar novamente
+                        break -- Sai do loop após teleportar para o primeiro inimigo encontrado
+                    end
+                end
+            end
+        end
+        if not enemyFound then
+            wait(1) -- Espera 5 segundos se nenhum inimigo for encontrado
+        end
+        wait(0.1) -- Espera um pouco antes de verificar novamente
+    end
+end
+
+autofarm()
+
